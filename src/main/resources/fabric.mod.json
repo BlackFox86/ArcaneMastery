@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "arcanemastery",
+  "version": "${version}",
+
+  "name": "Arcane Mastery",
+  "description": "A magical mod.",
+  "authors": [
+    "RedFox86"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/arcanemastery/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.redfox.arcanemastery.ArcaneMastery"
+    ],
+    "client": [
+      "net.redfox.arcanemastery.ArcaneMasteryClient"
+    ]
+  },
+  "mixins": [
+    "arcanemastery.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
